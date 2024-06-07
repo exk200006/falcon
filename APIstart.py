@@ -27,6 +27,7 @@ includes all API's
 
 Falcon Install:https://falconpy.io/Usage/Installation-Upgrades-and-Removal.html
 
+Crowdstrike github: https://github.com/CrowdStrike/falconpy/blob/main/src/falconpy/api_complete/_advanced.py
 
 
 """CrowdStrike FalconPy Quick Start."""
