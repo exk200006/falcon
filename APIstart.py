@@ -1,3 +1,34 @@
+from falconpy import Intel
+
+# Do not hardcode API credentials!
+falcon = Intel(client_id="CLIENT_ID",
+               client_secret="CLIENT_SECRET"
+               )
+
+response = falcon.query_report_entities(offset=integer,
+                                        limit=integer,
+                                        sort="string",
+                                        filter="string",
+                                        q="string",
+                                        fields=["string", "string"]
+                                        )
+
+print(response)
+
+//How to run this?
+
+Client ID: 328bec5d654b4cbd95f55c7e8a474bdc
+Client Secret: JK6r35ea2TIMQkEwLb74pAjx1qFvnHsRSh09m8zy
+
+
+Falcon Wiki:
+https://falconpy.io/Service-Collections/Intel.html#queryintelactorentities 
+includes all API's
+
+Falcon Install:https://falconpy.io/Usage/Installation-Upgrades-and-Removal.html
+
+
+
 """CrowdStrike FalconPy Quick Start."""
 import os
 from falconpy import Hosts
@@ -42,4 +73,7 @@ else:
         error_code = error["code"]
         error_message = error["message"]
         print(f"[Error {error_code}] {error_message}")
+
+
+
 
